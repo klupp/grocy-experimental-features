@@ -1,0 +1,7 @@
+.idea
+tests
+models
+**/__pycache__/
+index
+config.yml
+today_offers.json
