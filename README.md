@@ -9,7 +9,7 @@ as a database while utilizing the UserField functionality extensively.
 ### Client Application
 See the [React Client](https://github.com/klupp/grocy-experimental-features-client?tab=readme-ov-file).
 
-# How to run
+# Getting Started
 _NOTE: This app is released prematurely since it contains some specific rule that we used for our setup 
 which might not be transferable in other environments. For example all our product names have 3 translations 
 English, German, and Macedonian separated by ` / `. Some features use English name and some German. 
@@ -22,7 +22,7 @@ We intend to make this configurable and even use separate UserFields._
 _NOTE: Your Grocy server must be available to start the application._
 
 ### API Docs
-once you start the server you can see all the available API calls on `/api/docs`.
+once you start the server you can see all the available API calls on [http://localhost:5000/api/docs](http://localhost:5000/api/docs)
 
 # Features
 The features developed here are purely of experimental nature. However, we intend to make the stable
@@ -53,5 +53,5 @@ so far.
 
 The automatic prefilling of fields works here too. 
 
-# Automatic updating of existing products
+### Automatic updating of existing products
 data from OpenFoodFacts.
