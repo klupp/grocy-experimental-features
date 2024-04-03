@@ -5,3 +5,4 @@ models
 index
 config.yml
 today_offers.json
+**/.ipynb_checkpoints

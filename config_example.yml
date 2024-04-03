@@ -1,0 +1,34 @@
+grocy:
+  host: ""
+  port:
+  api_key: ""
+markt_guru:
+  host: "https://api.marktguru.de"
+  port: 443
+  api_key: ""
+  client_key: ""
+  zip_code:
+lidl:
+  token: ""
+  phone_number: ""
+  password: ""
+  language: ""
+  country: ""
+rewe:
+  token: ""
+netto:
+  username: ""
+  api_key: ""
+  token: ""
+kaufland:
+  user_id: ""
+  client_id: ""
+  token: ""
+open_facts:
+  username: ""
+  password: ""
+  off:
+    flavor: "off"
+    country: "world"
+    version: "v2"
+    environment: "org"
