@@ -21,7 +21,7 @@ class MarktGuruOffersService(OffersService):
         self.offer_index = offer_index
         offers_exist = os.path.isfile("today_offers.json")
         refresh_scheduled = offers_exist and (time.time() - os.path.getmtime("today_offers.json") > 86400)
-        if refresh_scheduled:
+        if (not offers_exist) or refresh_scheduled:
             offers = self.api.get_all_offers()
             self.offers = {offer['id']: offer for offer in offers}
             self.offer_index.update_offer_index(offers)
