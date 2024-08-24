@@ -19,7 +19,8 @@ class MarktGuruOffersService(OffersService):
         self.translator = GoogleTranslator(source='de', target='en')
         self.qus_cache = {}
         self.offer_index = offer_index
-        refresh_scheduled = time.time() - os.path.getmtime("today_offers.json") > 86400
+        offers_exist = os.path.isfile("today_offers.json")
+        refresh_scheduled = offers_exist and (time.time() - os.path.getmtime("today_offers.json") > 86400)
         if refresh_scheduled:
             offers = self.api.get_all_offers()
             self.offers = {offer['id']: offer for offer in offers}
