@@ -7,7 +7,7 @@ class LemmaTokenizer(Tokenizer):
         if lang == 'de':
             self.nlp = spacy.load('de_core_news_md')
         else:
-            self.nlp = spacy.load('en_core_web_sm')
+            self.nlp = spacy.load('en_core_web_md')
 
     def __call__(self, value, positions=False, chars=False, keeporiginal=False, removestops=True, start_pos=0,
                  start_char=0, tokenize=True, mode='', **kwargs):
